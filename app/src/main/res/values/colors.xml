@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="smart">#0794f3</color>
+    <color name="smart_s">#0066bf</color>
+    <color name="smart_l">#64c1ff</color>
+
+    <color name="productGridBackgroundColor">#FFFBFA</color>
+
 </resources>

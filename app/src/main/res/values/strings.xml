@@ -4,4 +4,17 @@
     <string name="login_password">Password</string>
     <string name="login_button">Login</string>
     <string name="login_cancel_button">Cancel</string>
+    <string name="login_error_message">password must have 6 characters</string>
+    <string name="search_title">Search</string>
+    <string name="filter_title">Title</string>
+    <string name="product_title">Title</string>
+    <string name="product_description">hi! this is a new product.</string>
+    <string name="menu_featured">Featured</string>
+    <string name="menu_category">Category</string>
+    <string name="menu_laptops">laptops</string>
+    <string name="menu_computers">computers</string>
+    <string name="menu_memories">memories</string>
+    <string name="menu_desks">desks</string>
+    <string name="menu_gaming_chair">gaming chairs</string>
+    <string name="menu_account">Account</string>
 </resources>
