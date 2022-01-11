@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -32,8 +33,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView (@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         inflater.inflate(R.layout.home_fragment, container, false);
         View view = inflater.inflate(R.layout.home_fragment, container, false);
-
         setUpToolbar(view);
+
 
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -52,22 +53,25 @@ public class HomeFragment extends Fragment {
     private void setUpToolbar(View view) {
         Toolbar toolbar = view.findViewById(R.id.app_bar);
         AppCompatActivity activity = (AppCompatActivity) getActivity();
-        if (activity != null) {
+        if(activity != null) {
             activity.setSupportActionBar(toolbar);
         }
-        toolbar.setNavigationOnClickListener(new NavigationIconClickListener(
-                getContext(),
-                view.findViewById(R.id.product_grid),
-                new AccelerateDecelerateInterpolator(),
-                getContext().getResources().getDrawable(R.drawable.menu_button),
-                getContext().getResources().getDrawable(R.drawable.menu_close)));
     }
-
     @Override
-    public  void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) {
+    public void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) {
         menuInflater.inflate(R.menu.toolbar_menu, menu);
         super.onCreateOptionsMenu(menu, menuInflater);
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.search:
+                ((NavigationHost) getActivity()).navigateTo(new ProfileFragment(), false);
+                return true;
+            default:
+                break;
 
-
-}
+        }
+        return false;
+    }
+    }

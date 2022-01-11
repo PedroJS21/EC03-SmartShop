@@ -6,19 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
     >
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/app_bar"
-            style="@style/Widget.SmartShop.Toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            app:title="@string/app_name"
-            app:navigationIcon="@drawable/menu_button"
 
-            />
-    </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout
         style="@style/Widget.NiceShop.Backdrop"
         android:layout_width="match_parent"
@@ -29,8 +17,18 @@
         android:paddingBottom="100dp"
         >
 
-        <include layout="@layout/backdrop" />
     </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.SmartShop.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:title="@string/app_name"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
     <androidx.core.widget.NestedScrollView
         android:id="@+id/product_grid"
         android:layout_width="match_parent"

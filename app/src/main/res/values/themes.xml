@@ -31,4 +31,15 @@
     <style name="Widget.NiceShop.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">?attr/colorOnSecondary</item>
     </style>
+    <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/smart_s</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/smart</item>
+    </style>
+
+    <style name="notificationSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/smart_l</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/smart</item>
+    </style>
 </resources>

@@ -10,7 +10,7 @@
     <color name="smart">#0794f3</color>
     <color name="smart_s">#0066bf</color>
     <color name="smart_l">#64c1ff</color>
-
+    <color name="content_t">#000000 </color>
     <color name="productGridBackgroundColor">#FFFBFA</color>
 
 </resources>
